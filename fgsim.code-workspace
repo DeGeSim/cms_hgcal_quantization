@@ -1,0 +1,94 @@
+{
+    "extensions": {
+        "recommendations": [
+            "2gua.rainbow-brackets",
+            "ms-python.python",
+            "richie5um2.vscode-sort-json",
+            "timonwong.shellcheck"
+        ]
+    },
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../standalone_scripts"
+        }
+    ],
+    "settings": {
+        "[python]": {
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": false
+            },
+            "editor.formatOnSave": true
+        },
+        "debug.console.closeOnEnd": true,
+        "debug.terminal.clearBeforeReusing": true,
+        "docwriter.style": "Google",
+        "editor.formatOnSave": true,
+        "files.exclude": {
+            "**/.*": true,
+            "**/CVS": true,
+            "**/Thumbs.db": true,
+            "**/__*__/**": true,
+            "fgsim/old/": true,
+            "*.egg-info": true,
+            "data/": true,
+            "wd/": true,
+            "*.tar": true,
+            "*.sqlite": true,
+            "performance/*": true,
+        },
+        "files.watcherExclude": {
+            "**/.*": true,
+            "**/CVS": true,
+            "**/Thumbs.db": true,
+            "**/__*__/**": true,
+            "fgsim/old/": true,
+            "*.egg-info": true,
+            "data/": true,
+            "wd/": true,
+            "*.tar": true,
+            "*.sqlite": true,
+            "performance/*": true,
+            "**/.git": true,
+            "**/node_modules/*/**": true
+        },
+        "jupyter.jupyterLaunchRetries": 1,
+        "python.analysis.typeCheckingMode": "basic",
+        "python.defaultInterpreterPath": "/dev/shm/mscham/fgsim/bin/python",
+        "python.envFile": "~/fgsim/.env",
+        "python.formatting.blackPath": "/dev/shm/mscham/fgsim/bin/black",
+        "python.formatting.provider": "black",
+        "python.languageServer": "Pylance",
+        "python.linting.enabled": true,
+        "python.linting.flake8Enabled": true,
+        "python.linting.flake8Path": "/dev/shm/mscham/fgsim/bin/pflake8",
+        "python.linting.ignorePatterns": [
+            "**/site-packages/**/*.py",
+            ".vscode/*.py",
+            "wd/**"
+        ],
+        "python.linting.lintOnSave": true,
+        "python.linting.mypyEnabled": true,
+        "python.linting.mypyPath": "/dev/shm/mscham/fgsim/bin/mypy",
+        "python.linting.pylintArgs": [
+            "--generated-members=numpy.* ,torch.*",
+            "--disable=E0402,C0116,logging-fstring-interpolation"
+        ],
+        "python.linting.pylintEnabled": false,
+        "python.linting.pylintPath": "/dev/shm/mscham/fgsim/bin/pylint",
+        "python.terminal.activateEnvironment": false,
+        // "python.pipenvPath": "/dev/shm/mscham/fgsim/bin/pipenv",
+        "python.testing.pytestEnabled": true,
+        "python.testing.pytestPath": "/dev/shm/mscham/fgsim/bin/pytest",
+        "python.testing.unittestEnabled": false,
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.cwd": "/home/mscham/fgsim",
+        "terminal.integrated.profiles.linux": {
+            "zsh": {
+                "path": "${env:HOME}/.apps/CentOSLinux7/bin/zsh",
+            }
+        },
+    },
+}

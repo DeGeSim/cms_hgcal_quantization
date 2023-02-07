@@ -1,0 +1,62 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[tool.pytest.ini_options]
+python_files = "*.py"
+testpaths = [
+  "tests",
+]
+#--ignore=E203,E302
+[tool.flake8]
+exclude = [
+  "*/tests",
+  "fgsim/geo/libs/*",
+  "fgsim/old/*",
+  ".tox",
+  "docs",
+  "__pycache__",
+]
+ignore = "E203,E302,W503,F541,"
+max-line-length = 84
+per-file-ignores = """
+    fgsim/__main__.py: E402,F401,
+    **/__init__.py: F401
+    """
+
+[tool.isort]
+profile = "black"
+line_length = 84
+
+[tool.black]
+exclude = '''
+(
+  /(
+    \..*
+    | _build
+    | buck-out
+    | build
+    | dist
+    | fgsim/old
+    | fgsim/geo/libs
+  )
+)
+'''
+preview = true
+include = '.*\.pyi?$'
+line-length = 84
+target-version = ['py38']
+
+[mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_untyped_defs = true
+exclude = "(\\..*|_build|dist|fgsim/old|fgsim/geo/libs)"
+ignore_missing_imports = true
+no_implicit_reexport = true
+python_version = 38
+show_error_codes = true
+strict_optional = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
