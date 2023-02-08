@@ -1,2 +1,3 @@
 path:
-  geo_lup: ~/beegfs/training_data/geo_hgcal/DetIdLUT.root
+  geo_lut: ~/beegfs/training_data/geo_hgcal/DetIdLUT.root
+  dataset: ~/beegfs/training_data/hgcal_photons_forward_soham/1.root

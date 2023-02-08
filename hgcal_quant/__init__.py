@@ -1,4 +1,5 @@
-from omegaconf import OmegaConf
 from pathlib import Path
 
-conf = OmegaConf.load(Path("../conf.yaml").expanduser())
+from omegaconf import OmegaConf
+
+conf = OmegaConf.load(Path("~/hgcal_quant/conf.yaml").expanduser())
