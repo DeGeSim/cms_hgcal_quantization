@@ -10,9 +10,6 @@
     "folders": [
         {
             "path": "."
-        },
-        {
-            "path": "../standalone_scripts"
         }
     ],
     "settings": {

@@ -117,3 +117,4 @@ venv*
 todo.txt
 env.tar
 *.sqlite
+hgcal_quant/plots/
